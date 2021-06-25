@@ -2,8 +2,9 @@ import styled from  'styled-components'
 import {Link, Link as LinkR} from "react-router-dom";
 import {Link as LinkS} from "react-scroll";
 
-export const  Nav = styled.nav`
-  background: #000;
+export const Nav = styled.nav`
+  background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+  box-shadow: ${({scrollNav}) => (scrollNav ? '0 0 20px 10px rgba(0,0,0,.95)' : 'none')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -13,9 +14,10 @@ export const  Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: all .2s ease;
   
   @media screen and (max-width: 960px){
-    transition: all .8s ease;
+    transition: all .2s ease;
   }
 `
 
