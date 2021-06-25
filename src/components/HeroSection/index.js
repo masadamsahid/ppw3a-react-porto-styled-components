@@ -33,17 +33,18 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>Hello There!</HeroH1>
                 <HeroP>
-                    I'm Adam, a Web Developer.
+                    I'm Adam, a Programmer. <br/>
+                    I do UI-UX Design, Web Development, Mobile Development, and many more.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button
-                        to={'signup'}
+                        to={'about'}
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary={'true'}
                         dark={'true'}
                     >
-                        Get Started {hover ? <ArrowForward/> : <ArrowRight/>}
+                        About Me {hover ? <ArrowForward/> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
