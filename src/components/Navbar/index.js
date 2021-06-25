@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to={"home"}>
-                        Masadam
+                        MASADAM
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>

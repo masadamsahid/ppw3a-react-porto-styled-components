@@ -9,7 +9,7 @@ function App() {
         <Router>
             <Switch>
                 <Route path={'/'} component={Home} exact/>
-                <Route path={'/'} component={Contacts}/>
+                <Route path={'/contact'} component={Contacts}/>
             </Switch>
             <Footer/>
         </Router>
