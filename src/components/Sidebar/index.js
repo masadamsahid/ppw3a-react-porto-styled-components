@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {
     SidebarContainer,
     Icon,
@@ -18,13 +18,53 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to={"about"} onClick={toggle}>About</SidebarLink>
-                    <SidebarLink to={"responsive"} onClick={toggle}>Responsive</SidebarLink>
-                    <SidebarLink to={"design"} onClick={toggle}>Design</SidebarLink>
-                    <SidebarLink to={"services"} onClick={toggle}>Services</SidebarLink>
+                    <SidebarLink
+                        to={"about"}
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                    >
+                        About
+                    </SidebarLink>
+                    <SidebarLink
+                        to={"responsive"}
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Responsive
+                    </SidebarLink>
+                    <SidebarLink
+                        to={"design"}
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Design
+                    </SidebarLink>
+                    <SidebarLink
+                        to={"services"}
+                        onClick={toggle}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                    >
+                        Services
+                    </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to={"/contact"}>Contacts</SidebarRoute>
+                    <SidebarRoute to={"/aboutme"}>Contacts</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

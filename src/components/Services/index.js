@@ -16,6 +16,11 @@ const Services = () => {
             <ServicesH1>I Offer You My Services</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
+                    <ServicesIcon src={'/images/svg-7.svg'}/>
+                    <ServicesH2>UI-UX Design</ServicesH2>
+                    <ServicesP>I'll deliver UI-UX design start from $15 for each page</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
                     <ServicesIcon src={'/images/svg-4.svg'}/>
                     <ServicesH2>Flutter Development</ServicesH2>
                     <ServicesP>I'll make a stunning mobile app with flutter</ServicesP>

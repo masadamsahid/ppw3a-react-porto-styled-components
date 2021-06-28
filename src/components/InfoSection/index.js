@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Button} from "../ButtonElement";
 
 import {
@@ -20,7 +20,6 @@ export const InfoSection = ({
                                 id,
                                 lightBg,
                                 lightText,
-                                lightTextDesc,
                                 topLine,
                                 headline,
                                 description,

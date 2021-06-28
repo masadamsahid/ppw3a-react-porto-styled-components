@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
-import {Link as LinkS} from 'react-scroll'
 
 
 export const FooterContainer = styled.footer`
@@ -21,13 +20,18 @@ export const FooterLinksContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   
   @media screen and (max-width: 820px){
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: space-around;
   }
+  
+  @media screen and (max-width: 576px){
+    flex-direction: column;
+  }
+  
 `
 
 export const FooterLinksWrapper = styled.div`
@@ -52,10 +56,8 @@ export const FooterLinkItems = styled.div`
   box-sizing: border-box;
   color: #fff;
   
-  @media screen and (max-width: 420px){
-    margin: 0;
+  @media screen and (max-width: 480px){
     padding: 10px;
-    width: 100%;
   }
 `
 
@@ -65,6 +67,15 @@ export const FooterLinkTitle = styled.div`
   border-bottom: 2px solid #fff;
   padding-right: 20px;
   padding-bottom: 8px;
+  
+  @media screen and (max-width: 480px){
+    font-size: 13px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #fff;
+    padding-right: 15px;
+    padding-bottom: 6px;
+  }
+  
 `
 
 export const FooterLink = styled.div`
@@ -79,6 +90,12 @@ export const FooterLink = styled.div`
     transition: all .3s ease-in-out;
     font-weight: bold;
   }
+  
+  @media screen and (max-width: 480px){
+    margin-bottom: .4rem;
+    font-size: 10px;
+  }
+  
 `
 
 /*====== WATCH YOUR STEP, PEASANT! =======*/
@@ -87,7 +104,7 @@ export const FooterLink = styled.div`
 
 export const SocialMedia = styled.div`
   width: 100%;
-  background-color: black;
+  background-color: #444444;
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -142,6 +159,13 @@ export const SocialIconLinks = styled.a`
   justify-content: center;
   align-items: center;
   transition: all .2s ease-in-out;
+  
+  &:hover{
+    background-color: ${({iconColor}) => {
+      return (iconColor !== '' ? iconColor : '#000')
+    }};;
+  }
+  
 `
 
 export const SocialIcons = styled.div`
@@ -173,7 +197,6 @@ export const SocialIcons = styled.div`
     color: #fff;
     transform: scale(1.25);
     border-radius: .5em;
-    background-color: #000;
   }
 `
 

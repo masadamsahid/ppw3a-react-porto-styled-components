@@ -96,7 +96,9 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to={'/contact'}>Contact Me</NavBtnLink>
+                        <NavBtnLink to={'/aboutme'} scrollNav={scrollNav}>
+                            Contact Me
+                        </NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

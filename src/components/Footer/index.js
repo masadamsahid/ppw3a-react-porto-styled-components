@@ -37,22 +37,6 @@ const Footer = () => {
                             <FooterLink to=''>Instagram</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Services</FooterLinkTitle>
-                            <FooterLink to=''>Full Bio</FooterLink>
-                            <FooterLink to=''>My Team</FooterLink>
-                            <FooterLink to=''>Testimonials</FooterLink>
-                            <FooterLink to=''>Get Fake Assistants</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Social Media</FooterLinkTitle>
-                            <FooterLink to=''>LinkedIn</FooterLink>
-                            <FooterLink to=''>GitHub</FooterLink>
-                            <FooterLink to=''>YouTube</FooterLink>
-                            <FooterLink to=''>Instagram</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
                 </FooterLinksContainer>
             </FooterWrap>
             <SocialMedia>
@@ -61,16 +45,16 @@ const Footer = () => {
                         MASADAM
                     </SocialLogo>
                     <SocialIcons>
-                        <SocialIconLinks href={'https://github.com/masadamsahid'} target={'_blank'} aria-label={'Github'}>
+                        <SocialIconLinks href={'https://github.com/masadamsahid'} target={'_blank'} aria-label={'Github'} iconColor={'#000'}>
                             <FaGithub/>
                         </SocialIconLinks>
-                        <SocialIconLinks href={'https://www.linkedin.com/in/masadamsahid/'} target={'_blank'} aria-label={'LinkedIn'}>
+                        <SocialIconLinks href={'https://www.linkedin.com/in/masadamsahid/'} target={'_blank'} aria-label={'LinkedIn'} iconColor={'#0072b1'}>
                             <FaLinkedin/>
                         </SocialIconLinks>
-                        <SocialIconLinks href={'https://www.youtube.com/channel/UCjwGYOoNHTYzgwtih6oNBfQ'} target={'_blank'} aria-label={'YouTube'}>
+                        <SocialIconLinks href={'https://www.youtube.com/channel/UCjwGYOoNHTYzgwtih6oNBfQ'} target={'_blank'} aria-label={'YouTube'} iconColor={'#c4302b'}>
                             <FaYoutube/>
                         </SocialIconLinks>
-                        <SocialIconLinks href={'https://www.instagram.com/masadamsahid/'} target={'_blank'} aria-label={'Instagram'}>
+                        <SocialIconLinks href={'https://www.instagram.com/masadamsahid/'} target={'_blank'} aria-label={'Instagram'} iconColor={'#bc2a8d'}>
                             <FaInstagram/>
                         </SocialIconLinks>
                     </SocialIcons>

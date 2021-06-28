@@ -16,6 +16,7 @@ import {
 //Import video file
 import Video from '../../videos/video.mp4'
 import {Button} from "../ButtonElement";
+import {Link} from "react-router-dom";
 
 const HeroSection = ({id}) => {
 
@@ -33,12 +34,15 @@ const HeroSection = ({id}) => {
             <HeroContent>
                 <HeroH1>Hello There!</HeroH1>
                 <HeroP>
-                    I'm Adam, a Programmer. <br/>
-                    I do UI-UX Design, Web Development, Mobile Development, and many more.
+                    I'm Adam, a &nbsp;
+                    <span style={{textDecoration:"line-through"}}>Professional Googler</span>
+                    <br/>
+                    Programmer and Software Developer. <br/> <br/>
+                    <p style={{fontSize:"16px"}}>I do UI-UX Design, Web Development, Mobile Development, and many more.</p>
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button
-                        to={'about'}
+                    <Button as={Link}
+                        to={'aboutme'}
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary={'true'}
